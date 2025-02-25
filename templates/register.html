@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 16px;
+            color: #555;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="password"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="{% url 'register' %}">
+        {% csrf_token %}
+    <div class="form-container">
+        <h2>Vendor Registration Form</h2>
+        <form action="submit_form.php" method="POST">
+            <!-- Vendor Name -->
+            <div class="form-group">
+                <label for="vendor-name">Vendor Name</label>
+                <input type="text" id="vendor-name" name="vendor_name" required>
+            </div>
+            
+            <!-- Email Address -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <!-- Vendor Type -->
+            <div class="form-group">
+                <label for="vendor-type">Vendor Type</label>
+                <select id="vendor-type" name="vendor_type" required>
+                    <option value="supplier">Supplier</option>
+                    <option value="distributor">Distributor</option>
+                    <option value="retailer">Retailer</option>
+                </select>
+            </div>
+
+            <!-- Business Address -->
+            <div class="form-group">
+                <label for="address">Business Address</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm_password" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Register Vendor</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{% comment %} {% extends 'base.html' %}
+{% block content %}
+
+    <section id="search-results">
+        <h1>Search Results</h1>
+        
+        {% if results %}
+            <div class="results">
+                {% for venue in results %}
+                    <div class="venue">
+                        <h2>{{ venue.name }}</h2>
+                        <p>{{ venue.city }}</p>
+                        <p>{{ venue.vendor_type }}</p>
+                        <p>{{ venue.description }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>No results found for the selected search criteria.</p>
+        {% endif %}
+    </section>
+
+{% endblock %}
+
+
+
+ {% endcomment %}
