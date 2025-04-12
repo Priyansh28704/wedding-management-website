@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+    body {
+        font-family: 'Amarante', cursive;
+        background: linear-gradient(to right, #ffecd2, #fcb69f);
+        margin: 0;
+        padding: 0;
+    }
+
+    .Home {
+        background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("/static/wedback13.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+
+    .Search-box {
+        margin: 20rem 0 0 0;
+        color: var(--clr3);
+        text-align: center;
+    }
+
+    .Search-box h1 {
+        font-size: 5.5rem;
+        color: var(--clr3);
+        font-weight: 600;
+        letter-spacing: .2rem;
+    }
+
+    .Search-box p {
+        font-size: 1.8rem;
+        margin: .5rem;
+    }
+
+    .Search-field {
+        width: 25rem;
+        height: 4.5rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--clr2);
+        margin: 10px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        background-color: #ff4e8e;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .SearchResults {
+        max-width: 1000px;
+        margin: 50px auto;
+        text-align: left;
+    }
+
+    .SearchResults h2 {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .vendor-card {
+        background: #fff;
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .vendor-card img {
+        width: 200px;
+        height: 130px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .vendor-details {
+        flex: 1;
+    }
+
+    .vendor-details h3 {
+        margin: 0 0 10px;
+        color: #ff4e8e;
+    }
+
+    .vendor-details p {
+        margin: 4px 0;
+        font-size: 15px;
+    }
+</style>
+
+<!-- Search Section -->
+<section id="Home" class="Home">
+    <form method="get" action="{% url 'search_vendors' %}">
+        <div class="Search-box">
+            <h1>Your Wedding, Your Way</h1>
+            <p>Find the Best Wedding Vendors with Thousands of Trusted Reviews</p>
+            <select name="vendor_type" class="Search-field">
+                <option disabled selected>Select Vendor Type</option>
+                <option value="Banquet Halls">Banquet Halls</option>
+                <option value="Wedding Resorts">Wedding Resorts</option>
+                <option value="Destination Wedding Venues">Destination Wedding Venues</option>
+                <option value="4 Star & Above Wedding Hotels">4 Star & Above Wedding Hotels</option>
+                <option value="Venue Concierge services">Venue Concierge services</option>
+                <option value="Small function & Party Halls">Small function & Party Halls</option>
+                <option value="View all Venues">View all Venues</option>
+            </select>
+            <select name="city" class="Search-field">
+                <option disabled selected>City</option>
+                <option value="Indore">Indore</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Udaipur">Udaipur</option>
+                <option value="Goa">Goa</option>
+                <option value="Khargone">Khargone</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Pune">Pune</option>
+                <option value="Jhansi">Jhansi</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Pushkar">Pushkar</option>
+            </select>
+            <br>
+            <button class="btn" type="submit">Search</button>
+        </div>
+    </form>
+</section>
+
+<!-- Search Results -->
+{% if vendors %}
+<section id="SearchResults" class="SearchResults">
+    <h2>Search Results:</h2>
+    {% for vendor in vendors %}
+    <div class="vendor-card">
+        <img src="{{ vendor.image_url }}" alt="Vendor Image">
+        <div class="vendor-details">
+            <h3>{{ vendor.name }}</h3>
+            <p>{{ vendor.description }}</p>
+            <p><strong>Type:</strong> {{ vendor.vendor_type }}</p>
+            <p><strong>City:</strong> {{ vendor.city }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+{% endif %}
+
+{% endblock %}

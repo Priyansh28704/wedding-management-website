@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+
+:root {
+    --clr1: #fff1f8;       /* Soft light pink background */
+    --clr2: #d81b60;       /* Deep rich pink for accents */
+    --clr3: #2c2c2c;       /* Dark grey text */
+    --clr4: #1a1a1a;       /* Darker grey/black */
+    --clr5: #fff0f6;       /* Light card background */
+    --clr6: #f06292;       /* Soft but visible pink for rating */
+    --clr7: #ffe3ec;       /* Footer background */
+    --clr8: #cfcfcf;       /* Scrollbar track */
+    --icon-bg: #d81b60;    /* Icon background */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Amarante", serif;
+    border: none;
+}
+
+html {
+    font-size: 65%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--clr2);
+}
+html::-webkit-scrollbar-track {
+    background: var(--clr8);
+}
+
+section {
+    padding: 7rem 9%;
+    margin-top: 7rem;
+}
+
+.btn {
+    margin-top: 2rem;
+    padding: 1.3rem 4rem;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--clr2);
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.btn:hover {
+    transform: translateY(-0.8rem);
+    background-color: #b3144f;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+    color: var(--clr3);
+}
+.title span {
+    color: var(--clr2);
+    font-size: 4rem;
+}
+.title p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--clr4);
+}
+
+/*---------------------- Header Section -------------------*/
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #c2185b; /* New darker header background */
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head .logo {
+    font-size: 2.5rem;
+    color: #ffffff; /* White logo text for contrast */
+    font-weight: bold;
+    letter-spacing: .1rem;
+    margin-right: 2rem;
+}
+.head .navbar {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-right: 2rem;
+}
+.head .navbar a {
+    padding-left: 1.5rem;
+    color: #ffffff; /* White nav links for better visibility */
+}
+#menu-bar {
+    display: none;
+    color: #ffffff;
+}
+
+
+/*---------------------- Home -------------------*/
+.Home {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("/static/wedback13.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.Search-box {
+    margin: 20rem 0 0 0;
+    color: var(--clr3);
+    text-align: center;
+}
+.Search-box h1 {
+    font-size: 5.5rem;
+    color: var(--clr3);
+    font-weight: 600;
+    letter-spacing: .2rem;
+}
+.Search-box p {
+    font-size: 1.8rem;
+    margin: .5rem;
+}
+.Search-field {
+    width: 25rem;
+    height: 4.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--clr2);
+}
+
+/*---------------------- Venues -------------------*/
+.venues {
+    background-color: #fff9f9;
+}
+.venues .venues-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.venues-box {
+    position: relative;
+    flex: 1 1 40rem;
+    height: 25rem;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.venues-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.venues-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: scale(1.1);
+    transition: 0.6s ease-in-out;
+}
+.venues-box:hover .venues-info {
+    opacity: 1;
+    transform: scale(1);
+}
+.venues-info h2 {
+    font-size: 3rem;
+}
+.venues-info p {
+    font-size: 2rem;
+}
+/*---------------------- Services -------------------*/
+.service {
+    background-color: #f3f3f3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 180vh;
+    font-family: 'Amarante', cursive;
+    padding-top: 4rem; /* Push content down */
+    padding-bottom: 2rem;
+}
+
+
+.services-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.services-col {
+    height: 22rem;
+    color: var(--clr4);
+    background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), 
+                url("wedback3.png");
+    background-color: var(--clr5);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    flex: 1 1 25rem;
+    padding: 1.5rem;
+    margin: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    transition: transform 0.3s ease;
+}
+
+.services-col:hover {
+    transform: translateY(-5px);
+}
+
+.services-col i {
+    padding: 1.8rem;
+    background: #ffffffcc;
+    color: var(--clr2);
+    border-radius: 50%;
+    font-size: 2.8rem;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.services-col h2 {
+    padding: 0.8rem 0;
+    font-size: 2rem;
+    color: var(--clr2);
+    font-weight: bold;
+}
+
+.services-col p {
+    font-size: 1.1rem;
+    color: var(--clr4);
+    line-height: 1.6;
+}
+
+/*---------------------- Vendor -------------------*/
+.vendor {
+    background-color: var(--clr1);
+    height: 180vh;
+    padding: 2rem 1rem; /* Adding padding for small screens */
+}
+
+.vendor-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vendor-col {
+    max-width: 400px;
+    background-color: #ffe9f0;
+    height: 35rem;
+    flex: 1 1 30rem;
+    padding: 1.2rem;
+    margin: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.5rem var(--clr2);
+    transition: transform 0.5s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.vendor-col:hover {
+    transform: rotate(1deg);
+}
+
+.vendor-col .rate {
+    width: 6rem;
+    padding: .5rem;
+    background: var(--clr6);
+    font-size: 1.6rem;
+}
+
+.vendor-col img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for zoom effect */
+}
+
+/* Hover effect */
+.vendor-col img:hover {
+    transform: scale(1.1); /* Zoom in effect */
+    box-shadow: 0 0 15px var(--clr2); /* Add a shadow effect on hover */
+}
+
+/* Add touch-friendly hover effect for mobile and tablet devices */
+@media (hover: none) and (pointer: coarse) {
+    .vendor-col img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .vendor-col img:active {
+        transform: scale(1.05); /* Smaller zoom on touch devices */
+        box-shadow: 0 0 10px var(--clr2); /* Smaller shadow on touch devices */
+    }
+}
+
+.vendor-col h2, .vendor-col h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--clr2);
+}
+
+.vendor-col p {
+    font-size: 1.4rem;
+    color: var(--clr4);
+}
+
+.vendor-col h3 {
+    background: var(--clr4);
+    color: white;
+}
+
+/* Media Queries for responsiveness */
+
+/* For screens less than 1200px */
+@media (max-width: 1200px) {
+    .vendor-col {
+        max-width: 350px; /* Slightly smaller width for medium screens */
+    }
+}
+
+/* For screens less than 992px (tablets) */
+@media (max-width: 992px) {
+    .vendor-row {
+        justify-content: flex-start; /* Align left for smaller screens */
+    }
+
+    .vendor-col {
+        max-width: 100%;
+        height: auto; /* Allow content to adjust height */
+        margin: 1rem 0; /* Adjust margin for better spacing */
+    }
+}
+
+/* For screens less than 768px (mobile devices) */
+@media (max-width: 768px) {
+    .vendor {
+        height: auto; /* Let the section grow as needed */
+    }
+
+    .vendor-col {
+        max-width: 100%;
+        padding: 1rem; /* Less padding for smaller screens */
+        margin: 1rem 0; /* Adjust margin for small screens */
+    }
+
+    .vendor-col .rate {
+        width: 5rem; /* Adjust size of rate box */
+        font-size: 1.4rem; /* Adjust font size */
+    }
+
+    .vendor-col h2, .vendor-col h3 {
+        font-size: 1.8rem; /* Slightly smaller font size */
+    }
+
+    .vendor-col p {
+        font-size: 1.2rem; /* Adjust text size */
+    }
+}
+
+/* For screens less than 480px (small mobile devices) */
+@media (max-width: 480px) {
+    .vendor-col h2, .vendor-col h3 {
+        font-size: 1.6rem; /* Further decrease font size */
+    }
+
+    .vendor-col p {
+        font-size: 1rem; /* Reduce paragraph font size */
+    }
+
+    .vendor-col img {
+        height: 15rem; /* Reduce image size */
+    }
+}
+
+/* Media Queries for responsiveness */
+
+/* For screens less than 1200px */
+@media (max-width: 1200px) {
+    .vendor-col {
+        max-width: 350px; /* Slightly smaller width for medium screens */
+    }
+}
+
+/* For screens less than 992px (tablets) */
+@media (max-width: 992px) {
+    .vendor-row {
+        justify-content: flex-start; /* Align left for smaller screens */
+    }
+
+    .vendor-col {
+        max-width: 100%;
+        height: auto; /* Allow content to adjust height */
+        margin: 1rem 0; /* Adjust margin for better spacing */
+    }
+}
+
+/* For screens less than 768px (mobile devices) */
+@media (max-width: 768px) {
+    .vendor {
+        height: auto; /* Let the section grow as needed */
+    }
+
+    .vendor-col {
+        max-width: 100%;
+        padding: 1rem; /* Less padding for smaller screens */
+        margin: 1rem 0; /* Adjust margin for small screens */
+    }
+
+    .vendor-col .rate {
+        width: 5rem; /* Adjust size of rate box */
+        font-size: 1.4rem; /* Adjust font size */
+    }
+
+    .vendor-col h2, .vendor-col h3 {
+        font-size: 1.8rem; /* Slightly smaller font size */
+    }
+
+    .vendor-col p {
+        font-size: 1.2rem; /* Adjust text size */
+    }
+}
+
+/* For screens less than 480px (small mobile devices) */
+@media (max-width: 480px) {
+    .vendor-col h2, .vendor-col h3 {
+        font-size: 1.6rem; /* Further decrease font size */
+    }
+
+    .vendor-col p {
+        font-size: 1rem; /* Reduce paragraph font size */
+    }
+
+    .vendor-col img {
+        height: 15rem; /* Reduce image size */
+    }
+}
+
+
+/*---------------------- E-Invite -------------------*/
+.Invite {
+    padding: 50px 20px;
+    background: linear-gradient(to right, #fbeaff, #f7e3ff);
+    text-align: center;
+}
+
+.Invite .title h1 {
+    font-family: 'Amarante', cursive;
+    font-size: 3rem;
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+.Invite .title span {
+    color: #ff1493;
+}
+
+.Invite .title p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.Invitation-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Card Box */
+.Invitation-box {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 250px;
+    max-width: 90%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    height: 350px;  /* Fix height of the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align content properly */
+    
+    /* Load animation */
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeZoom 1s ease forwards;
+}
+
+/* Staggered delay for cards */
+.Invitation-box:nth-child(1) { animation-delay: 0.1s; }
+.Invitation-box:nth-child(2) { animation-delay: 0.2s; }
+.Invitation-box:nth-child(3) { animation-delay: 0.3s; }
+.Invitation-box:nth-child(4) { animation-delay: 0.4s; }
+.Invitation-box:nth-child(5) { animation-delay: 0.5s; }
+.Invitation-box:nth-child(6) { animation-delay: 0.6s; }
+.Invitation-box:nth-child(7) { animation-delay: 0.7s; }
+.Invitation-box:nth-child(8) { animation-delay: 0.8s; }
+.Invitation-box:nth-child(9) { animation-delay: 0.9s; }
+.Invitation-box:nth-child(10) { animation-delay: 1s; }
+.Invitation-box:nth-child(11) { animation-delay: 1.1s; }
+.Invitation-box:nth-child(12) { animation-delay: 1.2s; }
+
+/* Keyframe Animation */
+@keyframes fadeZoom {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* New Hover Effect (Scale and Shadow) */
+.Invitation-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image inside Card */
+.Invitation-box img {
+    width: 100%;
+    height: 100%;  /* Make image fill the box */
+    object-fit: cover;  /* Ensures the image fills the space without stretching */
+    transition: transform 0.3s ease;
+}
+
+/* Image Hover Effect */
+.Invitation-box:hover img {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Remove Arrow */
+.Invitation-box::after {
+    content: none;
+}
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 768px) {
+    .Invitation-box {
+        width: 45%;
+        height: 300px;  /* Adjust the height for medium screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Invitation-box {
+        width: 100%;
+        height: 250px;  /* Adjust the height for smaller screens */
+    }
+}
+
+/*---------------------- Footer -------------------*/
+footer {
+    padding: 5rem 5%;
+}
+#contact {
+    background: var(--clr7);
+}
+.container {
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.f-container {
+    flex: 1 1 30rem;
+}
+.f-container h2 {
+    font-size: 2.5rem;
+    color: var(--clr4);
+    padding: 1rem 0;
+}
+.f-container a {
+    font-size: 1.6rem;
+    color: var(--clr2);
+    display: block;
+    padding: 0.5rem 0;
+}
+.f-container a:hover {
+    transform: translateX(0.5rem);
+    transition: 0.5s ease;
+}
+.f-container i {
+    padding-right: 0.5rem;
+    color: white;
+    background-color: var(--icon-bg);
+    padding: 0.8rem;
+    border-radius: 50%;
+    font-size: 2.2rem;
+}
+.f-container p {
+    font-size: 1.6rem;
+    color: var(--clr4);
+}
+.f-container input {
+    width: 90%;
+    padding: 1rem;
+    background: var(--clr5);
+    border: 0.2rem solid var(--clr2);
+}
+.f-container .btn {
+    background: var(--clr2);
+    color: white;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+}
+.f-container .social i {
+    margin-top: 1.5rem;
+    font-size: 3rem;
+    background: var(--clr2);
+    color: white;
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+.f-container .social i:hover {
+    transform: rotate(360deg);
+    transition: 1s ease;
+}

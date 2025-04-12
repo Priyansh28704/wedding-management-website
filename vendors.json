@@ -1,0 +1,849 @@
+[
+  {
+    "model": "service.vendor",
+    "pk": 1,
+    "fields": {
+      "name": "Indore Banquet Halls",
+      "description": "Top-rated banquet halls in Indore. Perfect for your dream wedding!",
+      "vendor_type": "Banquet Halls",
+      "city": "Indore",
+      "image_url": "https://image.wedmegood.com/resized/800X/uploads/member/3266296/1718361851_meeting_room.jpg"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 2,
+    "fields": {
+      "name": "Mumbai Banquet Halls",
+      "description": "Top-rated banquet halls in Mumbai. Perfect for your dream wedding!",
+      "vendor_type": "Banquet Halls",
+      "city": "Mumbai",
+      "image_url": "https://media.weddingz.in/images/ff5511dca7abe120d74c264b81a11cea/top-large-capacity-wedding-venues-in-mumbai-for-your-big-fat-indian-wedding.jpg"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 3,
+    "fields": {
+      "name": "Udaipur Banquet Halls",
+      "description": "Top-rated banquet halls in Udaipur. Perfect for your dream wedding!",
+      "vendor_type": "Banquet Halls",
+      "city": "Udaipur",
+      "image_url": "https://i0.wp.com/eventertainments.com/blog/wp-content/uploads/2021/02/ERSVTohUcAAMoFa.jpg?fit=1280%2C960&ssl=1"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 4,
+    "fields": {
+      "name": "Goa Banquet Halls",
+      "description": "Top-rated banquet halls in Goa. Perfect for your dream wedding!",
+      "vendor_type": "Banquet Halls",
+      "city": "Goa",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSryuV7aJv0CcRBDNNvXMDLtQf9aQRTZqIuAQ&s"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 5,
+    "fields": {
+      "name": "Khargone Banquet Halls",
+      "description": "Top-rated banquet halls in Khargone. Perfect for your dream wedding!",
+      "vendor_type": "Banquet Halls",
+      "city": "Khargone",
+      "image_url": "https://krishnahotelandresort.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-13-at-13.02.49-1.webp"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 6,
+    "fields": {
+      "name": "Delhi Banquet Halls",
+      "description": "Top-rated banquet halls in Delhi. Perfect for your dream wedding!",
+      "vendor_type": "Banquet Halls",
+      "city": "Delhi",
+      "image_url": "https://media.weddingz.in/images/0618ffc12eef8eb3d665f5ad7205a606/YwiYRj-GWvlu7OTRMUgnwnuyu26_DzXRuB0cTsaqB86GLP6zmVNA7Z19Y5Cxd6Os25Q56F2ZIMAbmrqHkrOSYnJ1SbKLAE6IRVD5ehO9HAsvwfsyowMUoIV1zJJN0SXif0Wa16KB.jpg"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 7,
+    "fields": {
+      "name": "Pune Banquet Halls",
+      "description": "Top-rated banquet halls in Pune. Perfect for your dream wedding!",
+      "vendor_type": "Banquet Halls",
+      "city": "Pune",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBhsmAKGsNagGE9v21QwgxjHjHjcoTlN-8Qg&s"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 8,
+    "fields": {
+      "name": "Jhansi Banquet Halls",
+      "description": "Top-rated banquet halls in Jhansi. Perfect for your dream wedding!",
+      "vendor_type": "Banquet Halls",
+      "city": "Jhansi",
+      "image_url": "https://cdn0.weddingwire.in/vendor/5282/3_2/640/png/d5_15_125282.jpeg"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 9,
+    "fields": {
+      "name": "Bangalore Banquet Halls",
+      "description": "Top-rated banquet halls in Bangalore. Perfect for your dream wedding!",
+      "vendor_type": "Banquet Halls",
+      "city": "Bangalore",
+      "image_url": "https://onehorizonproductions.com/wp-content/uploads/2022/10/Whitepetals-3-849.jpg"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 10,
+    "fields": {
+      "name": "Hyderabad Banquet Halls",
+      "description": "Top-rated banquet halls in Hyderabad. Perfect for your dream wedding!",
+      "vendor_type": "Banquet Halls",
+      "city": "Hyderabad",
+      "image_url": "https://cdn0.weddingwire.in/vendor/9118/3_2/640/jpeg/whatsapp-image-2024-09-05-at-3-06-18-pm_15_479118-172559822764198.jpeg"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 11,
+    "fields": {
+      "name": "Pushkar Banquet Halls",
+      "description": "Top-rated banquet halls in Pushkar. Perfect for your dream wedding!",
+      "vendor_type": "Banquet Halls",
+      "city": "Pushkar",
+      "image_url": "https://media.weddingz.in/photologue/images/edhatu-sahdev-bagh-ajmer-road-pushkar.PNG"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 12,
+    "fields": {
+      "name": "Indore Wedding Resorts",
+      "description": "Top-rated wedding resorts in Indore. Perfect for your dream wedding!",
+      "vendor_type": "Wedding Resorts",
+      "city": "Indore",
+      "image_url": "https://media-cdn.tripadvisor.com/media/photo-s/22/a1/9c/80/essentia-luxury-hotel.jpg"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 13,
+    "fields": {
+      "name": "Mumbai Wedding Resorts",
+      "description": "Top-rated wedding resorts in Mumbai. Perfect for your dream wedding!",
+      "vendor_type": "Wedding Resorts",
+      "city": "Mumbai",
+      "image_url": "https://source.unsplash.com/featured/?weddingresorts,mumbai"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 14,
+    "fields": {
+      "name": "Udaipur Wedding Resorts",
+      "description": "Top-rated wedding resorts in Udaipur. Perfect for your dream wedding!",
+      "vendor_type": "Wedding Resorts",
+      "city": "Udaipur",
+      "image_url": "https://source.unsplash.com/featured/?weddingresorts,udaipur"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 15,
+    "fields": {
+      "name": "Goa Wedding Resorts",
+      "description": "Top-rated wedding resorts in Goa. Perfect for your dream wedding!",
+      "vendor_type": "Wedding Resorts",
+      "city": "Goa",
+      "image_url": "https://source.unsplash.com/featured/?weddingresorts,goa"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 16,
+    "fields": {
+      "name": "Khargone Wedding Resorts",
+      "description": "Top-rated wedding resorts in Khargone. Perfect for your dream wedding!",
+      "vendor_type": "Wedding Resorts",
+      "city": "Khargone",
+      "image_url": "https://source.unsplash.com/featured/?weddingresorts,khargone"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 17,
+    "fields": {
+      "name": "Delhi Wedding Resorts",
+      "description": "Top-rated wedding resorts in Delhi. Perfect for your dream wedding!",
+      "vendor_type": "Wedding Resorts",
+      "city": "Delhi",
+      "image_url": "https://source.unsplash.com/featured/?weddingresorts,delhi"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 18,
+    "fields": {
+      "name": "Pune Wedding Resorts",
+      "description": "Top-rated wedding resorts in Pune. Perfect for your dream wedding!",
+      "vendor_type": "Wedding Resorts",
+      "city": "Pune",
+      "image_url": "https://source.unsplash.com/featured/?weddingresorts,pune"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 19,
+    "fields": {
+      "name": "Jhansi Wedding Resorts",
+      "description": "Top-rated wedding resorts in Jhansi. Perfect for your dream wedding!",
+      "vendor_type": "Wedding Resorts",
+      "city": "Jhansi",
+      "image_url": "https://source.unsplash.com/featured/?weddingresorts,jhansi"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 20,
+    "fields": {
+      "name": "Bangalore Wedding Resorts",
+      "description": "Top-rated wedding resorts in Bangalore. Perfect for your dream wedding!",
+      "vendor_type": "Wedding Resorts",
+      "city": "Bangalore",
+      "image_url": "https://source.unsplash.com/featured/?weddingresorts,bangalore"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 21,
+    "fields": {
+      "name": "Hyderabad Wedding Resorts",
+      "description": "Top-rated wedding resorts in Hyderabad. Perfect for your dream wedding!",
+      "vendor_type": "Wedding Resorts",
+      "city": "Hyderabad",
+      "image_url": "https://source.unsplash.com/featured/?weddingresorts,hyderabad"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 22,
+    "fields": {
+      "name": "Pushkar Wedding Resorts",
+      "description": "Top-rated wedding resorts in Pushkar. Perfect for your dream wedding!",
+      "vendor_type": "Wedding Resorts",
+      "city": "Pushkar",
+      "image_url": "https://source.unsplash.com/featured/?weddingresorts,pushkar"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 23,
+    "fields": {
+      "name": "Indore Destination Wedding Venues",
+      "description": "Top-rated destination wedding venues in Indore. Perfect for your dream wedding!",
+      "vendor_type": "Destination Wedding Venues",
+      "city": "Indore",
+      "image_url": "https://source.unsplash.com/featured/?destinationweddingvenues,indore"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 24,
+    "fields": {
+      "name": "Mumbai Destination Wedding Venues",
+      "description": "Top-rated destination wedding venues in Mumbai. Perfect for your dream wedding!",
+      "vendor_type": "Destination Wedding Venues",
+      "city": "Mumbai",
+      "image_url": "https://source.unsplash.com/featured/?destinationweddingvenues,mumbai"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 25,
+    "fields": {
+      "name": "Udaipur Destination Wedding Venues",
+      "description": "Top-rated destination wedding venues in Udaipur. Perfect for your dream wedding!",
+      "vendor_type": "Destination Wedding Venues",
+      "city": "Udaipur",
+      "image_url": "https://source.unsplash.com/featured/?destinationweddingvenues,udaipur"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 26,
+    "fields": {
+      "name": "Goa Destination Wedding Venues",
+      "description": "Top-rated destination wedding venues in Goa. Perfect for your dream wedding!",
+      "vendor_type": "Destination Wedding Venues",
+      "city": "Goa",
+      "image_url": "https://source.unsplash.com/featured/?destinationweddingvenues,goa"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 27,
+    "fields": {
+      "name": "Khargone Destination Wedding Venues",
+      "description": "Top-rated destination wedding venues in Khargone. Perfect for your dream wedding!",
+      "vendor_type": "Destination Wedding Venues",
+      "city": "Khargone",
+      "image_url": "https://source.unsplash.com/featured/?destinationweddingvenues,khargone"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 28,
+    "fields": {
+      "name": "Delhi Destination Wedding Venues",
+      "description": "Top-rated destination wedding venues in Delhi. Perfect for your dream wedding!",
+      "vendor_type": "Destination Wedding Venues",
+      "city": "Delhi",
+      "image_url": "https://source.unsplash.com/featured/?destinationweddingvenues,delhi"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 29,
+    "fields": {
+      "name": "Pune Destination Wedding Venues",
+      "description": "Top-rated destination wedding venues in Pune. Perfect for your dream wedding!",
+      "vendor_type": "Destination Wedding Venues",
+      "city": "Pune",
+      "image_url": "https://source.unsplash.com/featured/?destinationweddingvenues,pune"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 30,
+    "fields": {
+      "name": "Jhansi Destination Wedding Venues",
+      "description": "Top-rated destination wedding venues in Jhansi. Perfect for your dream wedding!",
+      "vendor_type": "Destination Wedding Venues",
+      "city": "Jhansi",
+      "image_url": "https://source.unsplash.com/featured/?destinationweddingvenues,jhansi"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 31,
+    "fields": {
+      "name": "Bangalore Destination Wedding Venues",
+      "description": "Top-rated destination wedding venues in Bangalore. Perfect for your dream wedding!",
+      "vendor_type": "Destination Wedding Venues",
+      "city": "Bangalore",
+      "image_url": "https://source.unsplash.com/featured/?destinationweddingvenues,bangalore"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 32,
+    "fields": {
+      "name": "Hyderabad Destination Wedding Venues",
+      "description": "Top-rated destination wedding venues in Hyderabad. Perfect for your dream wedding!",
+      "vendor_type": "Destination Wedding Venues",
+      "city": "Hyderabad",
+      "image_url": "https://source.unsplash.com/featured/?destinationweddingvenues,hyderabad"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 33,
+    "fields": {
+      "name": "Pushkar Destination Wedding Venues",
+      "description": "Top-rated destination wedding venues in Pushkar. Perfect for your dream wedding!",
+      "vendor_type": "Destination Wedding Venues",
+      "city": "Pushkar",
+      "image_url": "https://source.unsplash.com/featured/?destinationweddingvenues,pushkar"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 34,
+    "fields": {
+      "name": "Indore 4 Star & Above Wedding Hotels",
+      "description": "Top-rated 4 star & above wedding hotels in Indore. Perfect for your dream wedding!",
+      "vendor_type": "4 Star & Above Wedding Hotels",
+      "city": "Indore",
+      "image_url": "https://source.unsplash.com/featured/?4star&aboveweddinghotels,indore"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 35,
+    "fields": {
+      "name": "Mumbai 4 Star & Above Wedding Hotels",
+      "description": "Top-rated 4 star & above wedding hotels in Mumbai. Perfect for your dream wedding!",
+      "vendor_type": "4 Star & Above Wedding Hotels",
+      "city": "Mumbai",
+      "image_url": "https://source.unsplash.com/featured/?4star&aboveweddinghotels,mumbai"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 36,
+    "fields": {
+      "name": "Udaipur 4 Star & Above Wedding Hotels",
+      "description": "Top-rated 4 star & above wedding hotels in Udaipur. Perfect for your dream wedding!",
+      "vendor_type": "4 Star & Above Wedding Hotels",
+      "city": "Udaipur",
+      "image_url": "https://source.unsplash.com/featured/?4star&aboveweddinghotels,udaipur"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 37,
+    "fields": {
+      "name": "Goa 4 Star & Above Wedding Hotels",
+      "description": "Top-rated 4 star & above wedding hotels in Goa. Perfect for your dream wedding!",
+      "vendor_type": "4 Star & Above Wedding Hotels",
+      "city": "Goa",
+      "image_url": "https://source.unsplash.com/featured/?4star&aboveweddinghotels,goa"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 38,
+    "fields": {
+      "name": "Khargone 4 Star & Above Wedding Hotels",
+      "description": "Top-rated 4 star & above wedding hotels in Khargone. Perfect for your dream wedding!",
+      "vendor_type": "4 Star & Above Wedding Hotels",
+      "city": "Khargone",
+      "image_url": "https://source.unsplash.com/featured/?4star&aboveweddinghotels,khargone"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 39,
+    "fields": {
+      "name": "Delhi 4 Star & Above Wedding Hotels",
+      "description": "Top-rated 4 star & above wedding hotels in Delhi. Perfect for your dream wedding!",
+      "vendor_type": "4 Star & Above Wedding Hotels",
+      "city": "Delhi",
+      "image_url": "https://source.unsplash.com/featured/?4star&aboveweddinghotels,delhi"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 40,
+    "fields": {
+      "name": "Pune 4 Star & Above Wedding Hotels",
+      "description": "Top-rated 4 star & above wedding hotels in Pune. Perfect for your dream wedding!",
+      "vendor_type": "4 Star & Above Wedding Hotels",
+      "city": "Pune",
+      "image_url": "https://source.unsplash.com/featured/?4star&aboveweddinghotels,pune"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 41,
+    "fields": {
+      "name": "Jhansi 4 Star & Above Wedding Hotels",
+      "description": "Top-rated 4 star & above wedding hotels in Jhansi. Perfect for your dream wedding!",
+      "vendor_type": "4 Star & Above Wedding Hotels",
+      "city": "Jhansi",
+      "image_url": "https://source.unsplash.com/featured/?4star&aboveweddinghotels,jhansi"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 42,
+    "fields": {
+      "name": "Bangalore 4 Star & Above Wedding Hotels",
+      "description": "Top-rated 4 star & above wedding hotels in Bangalore. Perfect for your dream wedding!",
+      "vendor_type": "4 Star & Above Wedding Hotels",
+      "city": "Bangalore",
+      "image_url": "https://source.unsplash.com/featured/?4star&aboveweddinghotels,bangalore"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 43,
+    "fields": {
+      "name": "Hyderabad 4 Star & Above Wedding Hotels",
+      "description": "Top-rated 4 star & above wedding hotels in Hyderabad. Perfect for your dream wedding!",
+      "vendor_type": "4 Star & Above Wedding Hotels",
+      "city": "Hyderabad",
+      "image_url": "https://source.unsplash.com/featured/?4star&aboveweddinghotels,hyderabad"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 44,
+    "fields": {
+      "name": "Pushkar 4 Star & Above Wedding Hotels",
+      "description": "Top-rated 4 star & above wedding hotels in Pushkar. Perfect for your dream wedding!",
+      "vendor_type": "4 Star & Above Wedding Hotels",
+      "city": "Pushkar",
+      "image_url": "https://source.unsplash.com/featured/?4star&aboveweddinghotels,pushkar"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 45,
+    "fields": {
+      "name": "Indore Venue Concierge services",
+      "description": "Top-rated venue concierge services in Indore. Perfect for your dream wedding!",
+      "vendor_type": "Venue Concierge services",
+      "city": "Indore",
+      "image_url": "https://source.unsplash.com/featured/?venueconciergeservices,indore"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 46,
+    "fields": {
+      "name": "Mumbai Venue Concierge services",
+      "description": "Top-rated venue concierge services in Mumbai. Perfect for your dream wedding!",
+      "vendor_type": "Venue Concierge services",
+      "city": "Mumbai",
+      "image_url": "https://source.unsplash.com/featured/?venueconciergeservices,mumbai"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 47,
+    "fields": {
+      "name": "Udaipur Venue Concierge services",
+      "description": "Top-rated venue concierge services in Udaipur. Perfect for your dream wedding!",
+      "vendor_type": "Venue Concierge services",
+      "city": "Udaipur",
+      "image_url": "https://source.unsplash.com/featured/?venueconciergeservices,udaipur"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 48,
+    "fields": {
+      "name": "Goa Venue Concierge services",
+      "description": "Top-rated venue concierge services in Goa. Perfect for your dream wedding!",
+      "vendor_type": "Venue Concierge services",
+      "city": "Goa",
+      "image_url": "https://source.unsplash.com/featured/?venueconciergeservices,goa"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 49,
+    "fields": {
+      "name": "Khargone Venue Concierge services",
+      "description": "Top-rated venue concierge services in Khargone. Perfect for your dream wedding!",
+      "vendor_type": "Venue Concierge services",
+      "city": "Khargone",
+      "image_url": "https://source.unsplash.com/featured/?venueconciergeservices,khargone"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 50,
+    "fields": {
+      "name": "Delhi Venue Concierge services",
+      "description": "Top-rated venue concierge services in Delhi. Perfect for your dream wedding!",
+      "vendor_type": "Venue Concierge services",
+      "city": "Delhi",
+      "image_url": "https://source.unsplash.com/featured/?venueconciergeservices,delhi"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 51,
+    "fields": {
+      "name": "Pune Venue Concierge services",
+      "description": "Top-rated venue concierge services in Pune. Perfect for your dream wedding!",
+      "vendor_type": "Venue Concierge services",
+      "city": "Pune",
+      "image_url": "https://source.unsplash.com/featured/?venueconciergeservices,pune"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 52,
+    "fields": {
+      "name": "Jhansi Venue Concierge services",
+      "description": "Top-rated venue concierge services in Jhansi. Perfect for your dream wedding!",
+      "vendor_type": "Venue Concierge services",
+      "city": "Jhansi",
+      "image_url": "https://source.unsplash.com/featured/?venueconciergeservices,jhansi"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 53,
+    "fields": {
+      "name": "Bangalore Venue Concierge services",
+      "description": "Top-rated venue concierge services in Bangalore. Perfect for your dream wedding!",
+      "vendor_type": "Venue Concierge services",
+      "city": "Bangalore",
+      "image_url": "https://source.unsplash.com/featured/?venueconciergeservices,bangalore"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 54,
+    "fields": {
+      "name": "Hyderabad Venue Concierge services",
+      "description": "Top-rated venue concierge services in Hyderabad. Perfect for your dream wedding!",
+      "vendor_type": "Venue Concierge services",
+      "city": "Hyderabad",
+      "image_url": "https://source.unsplash.com/featured/?venueconciergeservices,hyderabad"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 55,
+    "fields": {
+      "name": "Pushkar Venue Concierge services",
+      "description": "Top-rated venue concierge services in Pushkar. Perfect for your dream wedding!",
+      "vendor_type": "Venue Concierge services",
+      "city": "Pushkar",
+      "image_url": "https://source.unsplash.com/featured/?venueconciergeservices,pushkar"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 56,
+    "fields": {
+      "name": "Indore Small function & Party Halls",
+      "description": "Top-rated small function & party halls in Indore. Perfect for your dream wedding!",
+      "vendor_type": "Small function & Party Halls",
+      "city": "Indore",
+      "image_url": "https://source.unsplash.com/featured/?smallfunction&partyhalls,indore"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 57,
+    "fields": {
+      "name": "Mumbai Small function & Party Halls",
+      "description": "Top-rated small function & party halls in Mumbai. Perfect for your dream wedding!",
+      "vendor_type": "Small function & Party Halls",
+      "city": "Mumbai",
+      "image_url": "https://source.unsplash.com/featured/?smallfunction&partyhalls,mumbai"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 58,
+    "fields": {
+      "name": "Udaipur Small function & Party Halls",
+      "description": "Top-rated small function & party halls in Udaipur. Perfect for your dream wedding!",
+      "vendor_type": "Small function & Party Halls",
+      "city": "Udaipur",
+      "image_url": "https://source.unsplash.com/featured/?smallfunction&partyhalls,udaipur"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 59,
+    "fields": {
+      "name": "Goa Small function & Party Halls",
+      "description": "Top-rated small function & party halls in Goa. Perfect for your dream wedding!",
+      "vendor_type": "Small function & Party Halls",
+      "city": "Goa",
+      "image_url": "https://source.unsplash.com/featured/?smallfunction&partyhalls,goa"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 60,
+    "fields": {
+      "name": "Khargone Small function & Party Halls",
+      "description": "Top-rated small function & party halls in Khargone. Perfect for your dream wedding!",
+      "vendor_type": "Small function & Party Halls",
+      "city": "Khargone",
+      "image_url": "https://source.unsplash.com/featured/?smallfunction&partyhalls,khargone"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 61,
+    "fields": {
+      "name": "Delhi Small function & Party Halls",
+      "description": "Top-rated small function & party halls in Delhi. Perfect for your dream wedding!",
+      "vendor_type": "Small function & Party Halls",
+      "city": "Delhi",
+      "image_url": "https://source.unsplash.com/featured/?smallfunction&partyhalls,delhi"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 62,
+    "fields": {
+      "name": "Pune Small function & Party Halls",
+      "description": "Top-rated small function & party halls in Pune. Perfect for your dream wedding!",
+      "vendor_type": "Small function & Party Halls",
+      "city": "Pune",
+      "image_url": "https://source.unsplash.com/featured/?smallfunction&partyhalls,pune"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 63,
+    "fields": {
+      "name": "Jhansi Small function & Party Halls",
+      "description": "Top-rated small function & party halls in Jhansi. Perfect for your dream wedding!",
+      "vendor_type": "Small function & Party Halls",
+      "city": "Jhansi",
+      "image_url": "https://source.unsplash.com/featured/?smallfunction&partyhalls,jhansi"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 64,
+    "fields": {
+      "name": "Bangalore Small function & Party Halls",
+      "description": "Top-rated small function & party halls in Bangalore. Perfect for your dream wedding!",
+      "vendor_type": "Small function & Party Halls",
+      "city": "Bangalore",
+      "image_url": "https://source.unsplash.com/featured/?smallfunction&partyhalls,bangalore"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 65,
+    "fields": {
+      "name": "Hyderabad Small function & Party Halls",
+      "description": "Top-rated small function & party halls in Hyderabad. Perfect for your dream wedding!",
+      "vendor_type": "Small function & Party Halls",
+      "city": "Hyderabad",
+      "image_url": "https://source.unsplash.com/featured/?smallfunction&partyhalls,hyderabad"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 66,
+    "fields": {
+      "name": "Pushkar Small function & Party Halls",
+      "description": "Top-rated small function & party halls in Pushkar. Perfect for your dream wedding!",
+      "vendor_type": "Small function & Party Halls",
+      "city": "Pushkar",
+      "image_url": "https://source.unsplash.com/featured/?smallfunction&partyhalls,pushkar"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 67,
+    "fields": {
+      "name": "Indore View all Venues",
+      "description": "Top-rated view all venues in Indore. Perfect for your dream wedding!",
+      "vendor_type": "View all Venues",
+      "city": "Indore",
+      "image_url": "https://source.unsplash.com/featured/?viewallvenues,indore"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 68,
+    "fields": {
+      "name": "Mumbai View all Venues",
+      "description": "Top-rated view all venues in Mumbai. Perfect for your dream wedding!",
+      "vendor_type": "View all Venues",
+      "city": "Mumbai",
+      "image_url": "https://source.unsplash.com/featured/?viewallvenues,mumbai"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 69,
+    "fields": {
+      "name": "Udaipur View all Venues",
+      "description": "Top-rated view all venues in Udaipur. Perfect for your dream wedding!",
+      "vendor_type": "View all Venues",
+      "city": "Udaipur",
+      "image_url": "https://source.unsplash.com/featured/?viewallvenues,udaipur"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 70,
+    "fields": {
+      "name": "Goa View all Venues",
+      "description": "Top-rated view all venues in Goa. Perfect for your dream wedding!",
+      "vendor_type": "View all Venues",
+      "city": "Goa",
+      "image_url": "https://source.unsplash.com/featured/?viewallvenues,goa"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 71,
+    "fields": {
+      "name": "Khargone View all Venues",
+      "description": "Top-rated view all venues in Khargone. Perfect for your dream wedding!",
+      "vendor_type": "View all Venues",
+      "city": "Khargone",
+      "image_url": "https://source.unsplash.com/featured/?viewallvenues,khargone"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 72,
+    "fields": {
+      "name": "Delhi View all Venues",
+      "description": "Top-rated view all venues in Delhi. Perfect for your dream wedding!",
+      "vendor_type": "View all Venues",
+      "city": "Delhi",
+      "image_url": "https://source.unsplash.com/featured/?viewallvenues,delhi"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 73,
+    "fields": {
+      "name": "Pune View all Venues",
+      "description": "Top-rated view all venues in Pune. Perfect for your dream wedding!",
+      "vendor_type": "View all Venues",
+      "city": "Pune",
+      "image_url": "https://source.unsplash.com/featured/?viewallvenues,pune"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 74,
+    "fields": {
+      "name": "Jhansi View all Venues",
+      "description": "Top-rated view all venues in Jhansi. Perfect for your dream wedding!",
+      "vendor_type": "View all Venues",
+      "city": "Jhansi",
+      "image_url": "https://source.unsplash.com/featured/?viewallvenues,jhansi"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 75,
+    "fields": {
+      "name": "Bangalore View all Venues",
+      "description": "Top-rated view all venues in Bangalore. Perfect for your dream wedding!",
+      "vendor_type": "View all Venues",
+      "city": "Bangalore",
+      "image_url": "https://source.unsplash.com/featured/?viewallvenues,bangalore"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 76,
+    "fields": {
+      "name": "Hyderabad View all Venues",
+      "description": "Top-rated view all venues in Hyderabad. Perfect for your dream wedding!",
+      "vendor_type": "View all Venues",
+      "city": "Hyderabad",
+      "image_url": "https://source.unsplash.com/featured/?viewallvenues,hyderabad"
+    }
+  },
+  {
+    "model": "service.vendor",
+    "pk": 77,
+    "fields": {
+      "name": "Pushkar View all Venues",
+      "description": "Top-rated view all venues in Pushkar. Perfect for your dream wedding!",
+      "vendor_type": "View all Venues",
+      "city": "Pushkar",
+      "image_url": "https://source.unsplash.com/featured/?viewallvenues,pushkar"
+    }
+  }
+]

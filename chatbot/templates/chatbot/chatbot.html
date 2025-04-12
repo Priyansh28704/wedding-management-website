@@ -1,0 +1,261 @@
+{% include "header.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wedding Assistant Chatbot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #fef6fb;
+      --accent: #ffe0f0;
+      --button-color: #ff69b4;
+      --light-text: #555;
+      --bot-bg: #fff5fa;
+      --user-bg: #e0f7fa;
+      --typing-color: #999;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Amarante', cursive;
+      background: url('https://plus.unsplash.com/premium_photo-1682024745224-2edf92747598?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2hhdGJvdHxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 90px;
+    }
+
+    #chat-panel {
+      width: 500px;
+      max-height: 700px;
+      background: var(--primary);
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      z-index: 999;
+      animation: slideUp 0.4s ease;
+      backdrop-filter: blur(3px);
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    #chat-panel h2 {
+      text-align: center;
+      padding: 15px;
+      color: #d63384;
+      background: var(--accent);
+      margin: 0;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      font-size: 2.5rem;
+    }
+
+    #chatbox {
+      padding: 15px;
+      height: 400px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .chat-input-area {
+      display: flex;
+      padding: 10px 15px;
+      background: var(--accent);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    #user-input {
+      padding: 15px 14px;
+      border: none;
+      border-radius: 20px;
+      font-size: 1.5rem;
+      width: 90%;
+      margin-right: 15px;
+    }
+
+    button.send-btn {
+      padding: 10px 18px;
+      background: var(--button-color);
+      color: white;
+      border: none;
+      border-radius: 20px;
+      font-size: 2rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+    }
+    button.send-btn:active {
+      transform: scale(0.95);
+      box-shadow: 0 2px 8px rgba(255, 20, 147, 0.3);
+    }
+    
+    
+    /* Hover Animation */
+    button.send-btn:hover {
+      background-color: #ff1493;
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(255, 20, 147, 0.5);
+    }
+    
+
+    button.send-btn.animate {
+      transform: scale(1.15);
+      box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+    }
+
+    .message-row {
+      display: flex;
+      margin: 10px 0;
+      align-items: flex-end;
+    }
+
+    .message-row.bot {
+      flex-direction: row;
+    }
+
+    .message-row.user {
+      flex-direction: row-reverse;
+    }
+
+    .avatar {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin: 0 8px;
+    }
+
+    .bubble {
+      padding: 10px 14px;
+      border-radius: 18px;
+      font-size: 2rem;
+      max-width: 75%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      line-height: 1.5;
+      white-space: pre-wrap;
+      backdrop-filter: blur(2px);
+    }
+
+    .bot .bubble {
+      background: rgba(255, 245, 250, 0.85);
+      color: var(--light-text);
+    }
+
+    .user .bubble {
+      background: rgba(224, 247, 250, 0.85);
+      color: #007bff;
+      text-align: right;
+    }
+
+    #typing-indicator {
+      display: none;
+      margin-left: 15px;
+      color: var(--typing-color);
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+
+    #typing-indicator span {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      margin: 0 2px;
+      background-color: var(--typing-color);
+      border-radius: 50%;
+      animation: typing 1s infinite;
+    }
+
+    #typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+    #typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+
+    @keyframes typing {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+
+    @media (max-width: 400px) {
+      #chat-panel {
+        width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="chat-panel">
+    <h2>Wedding Assistant</h2>
+    <div id="chatbox"></div>
+    <div id="typing-indicator">
+      Bot is typing
+      <span></span><span></span><span></span>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="user-input" placeholder="Type your message... 😊" />
+      <button class="send-btn" id="sendBtn" onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const chatbox = document.getElementById("chatbox");
+    const typingIndicator = document.getElementById("typing-indicator");
+    const sendBtn = document.getElementById("sendBtn");
+
+    const botAvatar = "https://cdn-icons-png.flaticon.com/128/11628/11628481.png";
+    const userAvatar = "https://cdn-icons-png.flaticon.com/128/4140/4140061.png";
+
+    function appendMessage(sender, text) {
+      const messageRow = document.createElement("div");
+      messageRow.className = `message-row ${sender}`;
+
+      const avatar = document.createElement("img");
+      avatar.src = sender === "bot" ? botAvatar : userAvatar;
+      avatar.className = "avatar";
+
+      const bubble = document.createElement("div");
+      bubble.className = "bubble";
+      bubble.innerHTML = `<b>${sender === "bot" ? "Bot" : "You"}:</b> ${text}`;
+
+      messageRow.appendChild(avatar);
+      messageRow.appendChild(bubble);
+      chatbox.appendChild(messageRow);
+      chatbox.scrollTop = chatbox.scrollHeight;
+    }
+
+    function animateButton(btn) {
+      btn.classList.add("animate");
+      setTimeout(() => {
+        btn.classList.remove("animate");
+      }, 300);
+    }
+
+    function sendMessage() {
+      const input = document.getElementById("user-input");
+      const userMessage = input.value.trim();
+      if (!userMessage) return;
+
+      animateButton(sendBtn);  // ✅ Add animation on click
+      appendMessage("user", userMessage);
+      input.value = "";
+      typingIndicator.style.display = "block";
+
+      fetch(`/chatbot/get-response/?message=${encodeURIComponent(userMessage)}`)
+        .then((response) => response.json())
+        .then((data) => {
+          typingIndicator.style.display = "none";
+          appendMessage("bot", data.response);
+        })
+        .catch(() => {
+          typingIndicator.style.display = "none";
+          appendMessage("bot", "Sorry, something went wrong! 😞");
+        });
+    }
+  </script>
+</body>
+</html>
