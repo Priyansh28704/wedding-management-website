@@ -37,9 +37,9 @@ def user_login(request):
         form = AuthenticationForm()
     return render(request, 'login.html', {'form': form})
 
-def logout_view(request):
-    logout(request)
-    return redirect('/accounts/login/')
+# def logout_view(request):
+#     logout(request)
+#     return redirect('/accounts/login/')
 
 def vendor_register(request):
     if request.method == 'POST':
