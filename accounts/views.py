@@ -26,17 +26,10 @@ def user_login(request):
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
-                return redirect('homepage') # Apne homepage ka URL name se replace karo
-            else:
-                # Invalid login credentials
-                pass
-        else:
-            # Invalid form
-            pass
+                return redirect('home')  # After login, redirect to the homepage
     else:
         form = AuthenticationForm()
     return render(request, 'login.html', {'form': form})
-
 
 
 def vendor_register(request):
