@@ -1,6 +1,6 @@
 import os
-from pathlib import Path
 import dj_database_url
+from pathlib import Path
 
 # Base directory of the project
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -8,7 +8,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Security settings
 SECRET_KEY = 'django-insecure-1$y%)x4o1wktg=7265x3j=kmreg!a59d*lanb8m!a_nh)@_uf5'
 DEBUG = False
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['wedding-management-website.onrender.com', 'localhost', '127.0.0.1']
+
 
 
 # Installed apps
@@ -28,7 +29,7 @@ INSTALLED_APPS = [
 # Middleware
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # ✅ yeh line sahi hai
+    'whitenoise.middleware.WhiteNoiseMiddleware', # ✅ yeh line sahi hai
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -89,12 +90,9 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
 
-# Static files
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
