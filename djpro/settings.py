@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Security settings
 SECRET_KEY = 'django-insecure-1$y%)x4o1wktg=7265x3j=kmreg!a59d*lanb8m!a_nh)@_uf5'
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['wedding-management-website.onrender.com', 'localhost', '127.0.0.1']
 
 
@@ -106,3 +106,20 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 
+import logging
+import sys
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'stream': sys.stdout,
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'DEBUG',
+    },
+}
