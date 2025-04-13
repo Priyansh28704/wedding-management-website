@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth import logout,login,authenticate
+from django.contrib.auth import login,authenticate
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login as auth_login
 from .forms import VendorForm
@@ -26,7 +26,7 @@ def user_login(request):
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
-                return redirect('homepage') # Apne homepage ka URL name se replace karo
+                return redirect('Home.html') # Apne homepage ka URL name se replace karo
             else:
                 # Invalid login credentials
                 pass
