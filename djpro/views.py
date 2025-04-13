@@ -5,7 +5,7 @@ from service.models import Service, Vendor  # ✅ Fixed import
 from django.contrib.auth.forms import AuthenticationForm
 
 def homePage(request):
-    return render(request, "prinik.html")
+    return render(request, "Home.html")
 
 def home(request):
     return render(request, "Home.html")

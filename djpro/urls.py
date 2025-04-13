@@ -18,5 +18,5 @@ urlpatterns = [
     path('userform', views.Login,name="userform"),
     #path('register', views.register,name="register"),
    #path('saveenquiry', views.Saveenquiry, name="saveenquiry"),
-    path('', views.search_vendors, name='search_vendors'),
+    path('search/', views.search_vendors, name='search_vendors'),
 ]
