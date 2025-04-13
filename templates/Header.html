@@ -22,7 +22,8 @@
             <a href="{% url 'About Us' %}">About Us</a>
             <a href="{% url 'chatbot' %}">Chatbot</a>
             {% if user.is_authenticated %}
-    
+    <!-- Kuch bhi mat dikhao -->
+{% else %}
     <a href="{% url 'login' %}">Login</a>
     <a href="{% url 'register' %}">Register</a>
 {% endif %}
