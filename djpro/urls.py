@@ -6,7 +6,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),  # custom register
     path('accounts/', include('django.contrib.auth.urls')),  # login/logout
-    path('', include('service.urls')),
+    #path('', include('service.urls')),
     path('chatbot/',include('chatbot.urls')),
     path('', views.homePage, name="homePage"),  
     path('Home', views.home, name="Home"),
