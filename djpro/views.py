@@ -1,7 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from service.models import Service, Vendor  # ✅ Fixed import
-
+from service.models import Service, Vendor  # ✅ Correct model import
 from django.contrib.auth.forms import AuthenticationForm
 
 def homePage(request):
@@ -16,7 +15,7 @@ def Services(request):
 def Venues(request):
     return render(request, "venues.html")
 
-def Vendor(request):
+def vendor_page(request):  # ✅ Renamed to avoid conflict with model name
     return render(request, "vendor.html")
 
 def E_invitation(request):
@@ -40,13 +39,13 @@ def Login(request):
 
 def search_vendors(request):
     if request.method == 'GET':
-        vendors_type = request.GET.get('vendors_type')
+        vendor_type = request.GET.get('vendor_type')  # ✅ Fixed typo
         city = request.GET.get('city')
 
         vendors = Vendor.objects.all()
 
-        if vendors_type and vendors_type != 'Select Vendor Type':
-            vendors = vendors.filter(vendor_type=vendors_type)  # ✅ Fixed field name
+        if vendor_type and vendor_type != 'Select Vendor Type':
+            vendors = vendors.filter(vendor_type=vendor_type)
 
         if city and city != 'City':
             vendors = vendors.filter(city=city)
